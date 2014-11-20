@@ -27,6 +27,10 @@ projects[geofield][type] = module
 projects[geofield][version] = 2.3
 projects[geofield][subdir] = contrib
 
+projects[geophp][type] = module
+projects[geophp][version] = 1.7
+projects[geophp][subdir] = contrib
+
 projects[search_api][type] = module
 projects[search_api][version] = 1.13
 projects[search_api][subdir] = contrib
