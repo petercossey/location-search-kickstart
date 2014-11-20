@@ -7,21 +7,27 @@ Location.
 This was originally presented at the Sydney Drupal User Group, there are some
 companion slides here: http://bit.ly/location-search-kickstart
 
-To build the profile, run:
+Getting started
+---------------
+Location Search Kickstart is a quick way to evaluate proximity based search
+using a Search API based module stack.
 
-drush make build-location-search-kickstart.make /path/to/wwwroot
+1. Grab the `distro.make` file from Location Search Kickstart and run:
 
-This will assemble a copy of Drupal core with the latest copy of the profile
-files from Git, along with all of its dependencies.
+    $ drush make build-location-search-kickstart.makee [directory]
 
-There are two other .make files, which are called from the "build" one:
+  or use its url on Drupal.org directly:
 
-- drupal-org-core.make:
-  This file just contains the definition for how to package Drupal core.
+    $ drush make --prepare-install "https://raw.githubusercontent.com/thislittleduck/location-search-kickstart/master/build-location-search-kickstart.make" [directory]
 
-- drupal-org.make:
-  This file is where the bulk of the work happens; contributed modules/themes,
-  external libraries, non-core patches, etc. are all handled here.
+2. Choose the "Location Search Kickstart" install profile when installing Drupal.
 
-See http://drupal.org/developing/distributions for the longer version of these
-instructions. :)
+
+Using Drush for a quick install
+-------------------------------
+If you just want to quickly evaluate Location Search Kickstart without
+configuring a server, you could try the Drush to automatically install and run
+the distribution using Drush's in-built server. After running the drush make
+step above, change into the Drupal root directory and run the following:
+
+    $ drush si --db-url=sqlite://sites/default/files/localdb.sqlite location_search_kickstart --yes && drush rs /admin/reports/status --user=admin
