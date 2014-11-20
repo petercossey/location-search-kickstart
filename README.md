@@ -12,13 +12,23 @@ Getting started
 Location Search Kickstart is a quick way to evaluate proximity based search
 using a Search API based module stack.
 
-1. Grab the `distro.make` file from Location Search Kickstart and run:
+1. To build the profile, run:
 
-    $ drush make build-location-search-kickstart.makee [directory]
+    $ drush make build-spark.make /path/to/wwwroot
 
-  or use its url on Drupal.org directly:
+This will assemble a copy of Drupal core with the latest copy of the Spark
+distro files from Git, along with all of its dependencies.
 
-    $ drush make --prepare-install "https://raw.githubusercontent.com/thislittleduck/location-search-kickstart/master/build-location-search-kickstart.make" [directory]
+There are two other .make files, which are called from the "build" one:
+
+- drupal-org-core.make:
+  This file just contains the definition for how to package Drupal core. We
+  hopefully shouldn't have to edit this much, unless we need to add additional
+  core patches.
+
+- drupal-org.make:
+  This file is where the bulk of the work happens; contributed modules/themes,
+  external libraries, non-core patches, etc. are all handled here.
 
 2. Choose the "Location Search Kickstart" install profile when installing Drupal.
 
