@@ -15,6 +15,10 @@ projects[ctools][type] = module
 projects[ctools][version] = 1.5
 projects[ctools][subdir] = contrib
 
+projects[entity][type] = module
+projects[entity][version] = 1.5
+projects[entity][subdir] = contrib
+
 projects[features][type] = module
 projects[features][version] = 2.2
 projects[features][subdir] = contrib

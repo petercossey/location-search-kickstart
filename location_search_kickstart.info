@@ -8,11 +8,13 @@ dependencies[] = field_ui
 dependencies[] = file
 dependencies[] = menu
 dependencies[] = path
+dependencies[] = node
 
 ; Contrib
 dependencies[] = admin_menu
 dependencies[] = admin_menu_toolbar
 dependencies[] = ctools
+dependencies[] = entity
 dependencies[] = features
 dependencies[] = strongarm
 dependencies[] = views
