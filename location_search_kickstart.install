@@ -1,0 +1,11 @@
+<?php
+
+/**
+ * Implements hook_install()
+ */
+function location_search_kickstart_install() {
+  theme_enable(array('bartik', 'seven'));
+  variable_set('theme_default', 'bartik');
+  variable_set('admin_theme', 'seven');
+  variable_set('node_admin_theme', '1');
+}

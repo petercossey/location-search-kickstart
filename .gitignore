@@ -1,0 +1,4 @@
+modules/*
+!modules/leaflet_kickstart_features
+themes/*
+libraries/*
