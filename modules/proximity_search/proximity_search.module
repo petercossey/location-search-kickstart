@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Proximity search feature.
+ */
+
+include_once 'proximity_search.features.inc';
