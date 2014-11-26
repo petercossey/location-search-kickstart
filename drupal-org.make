@@ -13,14 +13,8 @@ projects[ctools][subdir] = "contrib"
 projects[devel][version] = "1.5"
 projects[devel][subdir] = "contrib"
 
-projects[profiler_builder][version] = "1.2"
-projects[profiler_builder][subdir] = "contrib"
-
 projects[features][version] = "2.2"
 projects[features][subdir] = "contrib"
-
-projects[proximity_search][version] = "1.0"
-projects[proximity_search][subdir] = "custom"
 
 projects[geofield][version] = "2.3"
 projects[geofield][subdir] = "contrib"
@@ -67,3 +61,5 @@ projects[search_api_solr][subdir] = "contrib"
 projects[views][version] = "3.8"
 projects[views][subdir] = "contrib"
 
+;projects[proximity_search][subdir] = "custom"
+;projects[proximity_search][download][type] = git

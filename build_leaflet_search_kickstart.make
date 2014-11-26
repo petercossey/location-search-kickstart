@@ -7,7 +7,8 @@ includes[] = drupal-org-core.make
 
 ; Download the install profile and recursively build all its dependencies:
 projects[leaflet_search_kickstart][type] = profile
-projects[leaflet_search_kickstart][version] = 7.x
+projects[leaflet_search_kickstart][download][type] = git
+projects[leaflet_search_kickstart][download][url] = https://bitbucket.org/alex_bukach/proximity-search-kickstart.git
 
 ; +++++ Libraries +++++
 
