@@ -60,6 +60,3 @@ projects[search_api_solr][subdir] = "contrib"
 
 projects[views][version] = "3.8"
 projects[views][subdir] = "contrib"
-
-;projects[proximity_search][subdir] = "custom"
-;projects[proximity_search][download][type] = git
