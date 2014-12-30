@@ -1,5 +1,5 @@
 ; Packaging information for leaflet_search_kickstart
-name = "leaflet_search_kickstart"
+name = "Proximity Search Kickstart"
 description = ""
 exclusive = "1"
 core = "7.x"
