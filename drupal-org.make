@@ -60,3 +60,19 @@ projects[search_api_solr][subdir] = "contrib"
 
 projects[views][version] = "3.8"
 projects[views][subdir] = "contrib"
+
+; +++++ Libraries +++++
+
+; leaflet
+libraries[leaflet][directory_name] = leaflet
+libraries[leaflet][type] = library
+libraries[leaflet][destination] = libraries
+libraries[leaflet][download][type] = get
+libraries[leaflet][download][url] = http://leaflet-cdn.s3.amazonaws.com/build/leaflet-0.7.1.zip
+
+; geocomplete
+libraries[geocomplete][directory_name] = geocomplete
+libraries[geocomplete][type] = library
+libraries[geocomplete][destination] = libraries
+libraries[geocomplete][download][type] = get
+libraries[geocomplete][download][url] = https://github.com/ubilabs/geocomplete/archive/master.zip
