@@ -53,7 +53,7 @@ function proximity_search_default_search_api_index() {
     "server" : "my_server",
     "item_type" : "node",
     "options" : {
-      "index_directly" : 0,
+      "index_directly" : 1,
       "cron_limit" : "50",
       "fields" : {
         "field_coordinates:latlon" : { "type" : "string", "real_type" : "location" },
