@@ -4,7 +4,7 @@ api = "2"
 
 ; +++++ Modules +++++
 
-projects[admin_menu][version] = "3.0-rc4"
+projects[admin_menu][version] = "3.0-rc5"
 projects[admin_menu][subdir] = "contrib"
 
 projects[ctools][version] = "1.5"
@@ -49,7 +49,7 @@ projects[strongarm][subdir] = "contrib"
 projects[panels][version] = "3.4"
 projects[panels][subdir] = "contrib"
 
-projects[search_api][version] = "1.13"
+projects[search_api][version] = "1.14"
 projects[search_api][subdir] = "contrib"
 
 projects[search_api_location][version] = "2.0-beta2"
