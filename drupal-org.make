@@ -7,22 +7,22 @@ api = "2"
 projects[admin_menu][version] = "3.0-rc5"
 projects[admin_menu][subdir] = "contrib"
 
-projects[ctools][version] = "1.5"
+projects[ctools][version] = "1.7"
 projects[ctools][subdir] = "contrib"
 
 projects[devel][version] = "1.5"
 projects[devel][subdir] = "contrib"
 
-projects[features][version] = "2.2"
+projects[features][version] = "2.5"
 projects[features][subdir] = "contrib"
 
 projects[geofield][version] = "2.3"
 projects[geofield][subdir] = "contrib"
 
-projects[geocomplete][version] = "1.x-dev"
+projects[geocomplete][version] = "1.0-rc1"
 projects[geocomplete][subdir] = "contrib"
 
-projects[entity][version] = "1.5"
+projects[entity][version] = "1.6"
 projects[entity][subdir] = "contrib"
 
 projects[geocoder][version] = "1.2"
@@ -34,7 +34,7 @@ projects[geophp][subdir] = "contrib"
 projects[leaflet][version] = "1.1"
 projects[leaflet][subdir] = "contrib"
 
-projects[leaflet_more_maps][version] = "1.10"
+projects[leaflet_more_maps][version] = "1.11"
 projects[leaflet_more_maps][subdir] = "contrib"
 
 projects[leaflet_views_ajax_popup][version] = "1.x-dev"
@@ -46,7 +46,7 @@ projects[libraries][subdir] = "contrib"
 projects[strongarm][version] = "2.0"
 projects[strongarm][subdir] = "contrib"
 
-projects[panels][version] = "3.4"
+projects[panels][version] = "3.5"
 projects[panels][subdir] = "contrib"
 
 projects[search_api][version] = "1.14"
@@ -58,7 +58,7 @@ projects[search_api_location][subdir] = "contrib"
 projects[search_api_solr][version] = "1.6"
 projects[search_api_solr][subdir] = "contrib"
 
-projects[views][version] = "3.8"
+projects[views][version] = "3.11"
 projects[views][subdir] = "contrib"
 
 ; +++++ Libraries +++++
