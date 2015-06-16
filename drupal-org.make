@@ -37,7 +37,7 @@ projects[leaflet][subdir] = "contrib"
 projects[leaflet_more_maps][version] = "1.11"
 projects[leaflet_more_maps][subdir] = "contrib"
 
-projects[leaflet_views_ajax_popup][version] = "1.x-dev"
+projects[leaflet_views_ajax_popup][version] = "1.0-rc1"
 projects[leaflet_views_ajax_popup][subdir] = "contrib"
 
 projects[libraries][version] = "2.2"
