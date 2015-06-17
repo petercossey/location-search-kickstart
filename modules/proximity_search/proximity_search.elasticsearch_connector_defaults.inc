@@ -17,7 +17,7 @@ function proximity_search_default_elasticsearch_connector_cluster() {
   $elasticsearch_connector_cluster->name = 'Elastic cluster';
   $elasticsearch_connector_cluster->url = '';
   $elasticsearch_connector_cluster->status = 1;
-  $elasticsearch_connector_cluster->options = 'a:6:{s:25:"multiple_nodes_connection";i:0;s:18:"use_authentication";i:0;s:19:"authentication_type";s:5:"Basic";s:8:"username";s:10:"";s:8:"password";s:10:"";s:7:"timeout";s:3:"150";}';
+  $elasticsearch_connector_cluster->options = 'a:6:{s:25:"multiple_nodes_connection";i:0;s:18:"use_authentication";i:0;s:19:"authentication_type";s:5:"Basic";s:8:"username";s:0:"";s:8:"password";s:0:"";s:7:"timeout";s:3:"150";}';
   $export['elastic_cluster'] = $elasticsearch_connector_cluster;
 
   return $export;

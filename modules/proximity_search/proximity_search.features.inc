@@ -154,7 +154,7 @@ function proximity_search_default_search_api_server() {
     "machine_name" : "elastic_server",
     "description" : "Please configure this server to use valid Elasticsearch cluster.",
     "class" : "search_api_elasticsearch_connector",
-    "options" : { "cluster" : "", "facet_limit" : 10 },
+    "options" : { "cluster" : "elastic_cluster", "facet_limit" : 10 },
     "enabled" : "1"
   }');
   return $items;
