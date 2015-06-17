@@ -8,4 +8,5 @@ includes[] = drupal-org-core.make
 ; Download the install profile and recursively build all its dependencies:
 projects[leaflet_search_kickstart][type] = profile
 projects[leaflet_search_kickstart][download][type] = git
+projects[leaflet_search_kickstart][download][branch] = elastic
 projects[leaflet_search_kickstart][download][url] = git@github.com:thislittleduck/location-search-kickstart.git
