@@ -2,10 +2,7 @@ Proximity Search Kickstart
 =========================
 
 A Drupal installation profile to demonstrate proximity location search using Search API
-Location and Leaflet modules.
-
-This was originally presented at the Drupal Camp Moscow 2014, there are some
-companion slides here: http://bit.ly/proximity-search-slides.
+Location and Leaflet modules, with Elasticsearch-based search.
 
 Getting started
 ---------------
@@ -16,6 +13,13 @@ To build the profile, run:
 
     $ drush make build_leaflet_search_kickstart.make /path/to/wwwroot
 
+After installing Drupal, visit /admin/config/search/search_api/server/solr_server/edit
+and configure Solr server.
+
+To use Elasticsearch instead of Solr visit /admin/config/elasticsearch-connector/clusters/elastic_cluster/edit
+and configure elasticsearch cluster. Then visit /admin/config/search/search_api/index/my_index/edit
+and switch Server to Elastic server. After that you can disable Solr server at
+/admin/config/search/search_api/server/solr_server/edit.
 
 Using Drush for a quick install
 -------------------------------
