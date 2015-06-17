@@ -22,6 +22,9 @@ projects[geofield][subdir] = "contrib"
 projects[geocomplete][version] = "1.0-rc1"
 projects[geocomplete][subdir] = "contrib"
 
+projects[elasticsearch_connector][version] = "7.x-1.0-alpha7"
+projects[elasticsearch_connector][subdir] = "contrib"
+
 projects[entity][version] = "1.6"
 projects[entity][subdir] = "contrib"
 
@@ -54,9 +57,6 @@ projects[search_api][subdir] = "contrib"
 
 projects[search_api_location][version] = "2.0-beta2"
 projects[search_api_location][subdir] = "contrib"
-
-projects[search_api_solr][version] = "1.6"
-projects[search_api_solr][subdir] = "contrib"
 
 projects[views][version] = "3.11"
 projects[views][subdir] = "contrib"

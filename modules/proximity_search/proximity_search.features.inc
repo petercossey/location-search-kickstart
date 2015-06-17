@@ -8,6 +8,9 @@
  * Implements hook_ctools_plugin_api().
  */
 function proximity_search_ctools_plugin_api($module = NULL, $api = NULL) {
+  if ($module == "elasticsearch_connector" && $api == "elasticsearch_connector_defaults") {
+    return array("version" => "1");
+  }
   if ($module == "page_manager" && $api == "pages_default") {
     return array("version" => "1");
   }
@@ -50,11 +53,15 @@ function proximity_search_default_search_api_index() {
     "name" : "My index",
     "machine_name" : "my_index",
     "description" : null,
-    "server" : "my_server",
+    "server" : "elastic_server",
     "item_type" : "node",
     "options" : {
       "index_directly" : 1,
       "cron_limit" : "50",
+      "index_name" : { "index" : "elastic_index", "cluster_id" : "elastic_cluster" },
+      "collect_index_statistics" : 0,
+      "log_only_not_found" : 0,
+      "index_statistics_ttl" : "365d",
       "fields" : {
         "field_coordinates:latlon" : { "type" : "string", "real_type" : "location" },
         "search_api_language" : { "type" : "string" }
@@ -123,27 +130,12 @@ function proximity_search_default_search_api_index() {
  */
 function proximity_search_default_search_api_server() {
   $items = array();
-  $items['my_server'] = entity_import('search_api_server', '{
-    "name" : "My server",
-    "machine_name" : "my_server",
-    "description" : "Please configure this server to use valid Solr sever.",
-    "class" : "search_api_solr_service",
-    "options" : {
-      "clean_ids" : true,
-      "site_hash" : true,
-      "scheme" : "http",
-      "host" : "localhost",
-      "port" : "8983",
-      "path" : "\\/solr",
-      "http_user" : "",
-      "http_pass" : "",
-      "excerpt" : 0,
-      "retrieve_data" : 0,
-      "highlight_data" : 0,
-      "skip_schema_check" : 0,
-      "solr_version" : "",
-      "http_method" : "AUTO"
-    },
+  $items['elastic_server'] = entity_import('search_api_server', '{
+    "name" : "Elastic server",
+    "machine_name" : "elastic_server",
+    "description" : "Please configure this server to use valid Elasticsearch cluster.",
+    "class" : "search_api_elasticsearch_connector",
+    "options" : { "cluster" : "", "facet_limit" : 10 },
     "enabled" : "1"
   }');
   return $items;
