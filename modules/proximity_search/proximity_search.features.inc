@@ -147,6 +147,7 @@ function proximity_search_default_search_api_server() {
       "solr_version" : "",
       "http_method" : "AUTO"
     },
+    "enabled" : "1"
   }');
   $items['elastic_server'] = entity_import('search_api_server', '{
     "name" : "Elastic server",
