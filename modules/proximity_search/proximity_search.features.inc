@@ -53,15 +53,11 @@ function proximity_search_default_search_api_index() {
     "name" : "My index",
     "machine_name" : "my_index",
     "description" : null,
-    "server" : "elastic_server",
+    "server" : "solr_server",
     "item_type" : "node",
     "options" : {
       "index_directly" : 1,
       "cron_limit" : "50",
-      "index_name" : { "index" : "elastic_index", "cluster_id" : "elastic_cluster" },
-      "collect_index_statistics" : 0,
-      "log_only_not_found" : 0,
-      "index_statistics_ttl" : "365d",
       "fields" : {
         "field_coordinates:latlon" : { "type" : "string", "real_type" : "location" },
         "search_api_language" : { "type" : "string" }
@@ -130,6 +126,28 @@ function proximity_search_default_search_api_index() {
  */
 function proximity_search_default_search_api_server() {
   $items = array();
+  $items['solr_server'] = entity_import('search_api_server', '{
+    "name" : "Solr server",
+    "machine_name" : "solr_server",
+    "description" : "Please configure this server to use valid Solr sever.",
+    "class" : "search_api_solr_service",
+    "options" : {
+      "clean_ids" : true,
+      "site_hash" : true,
+      "scheme" : "http",
+      "host" : "localhost",
+      "port" : "8983",
+      "path" : "\\/solr",
+      "http_user" : "",
+      "http_pass" : "",
+      "excerpt" : 0,
+      "retrieve_data" : 0,
+      "highlight_data" : 0,
+      "skip_schema_check" : 0,
+      "solr_version" : "",
+      "http_method" : "AUTO"
+    },
+  }');
   $items['elastic_server'] = entity_import('search_api_server', '{
     "name" : "Elastic server",
     "machine_name" : "elastic_server",
