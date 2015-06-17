@@ -22,7 +22,7 @@ projects[geofield][subdir] = "contrib"
 projects[geocomplete][version] = "1.0-rc1"
 projects[geocomplete][subdir] = "contrib"
 
-projects[elasticsearch_connector][version] = "7.x-1.0-alpha7"
+projects[elasticsearch_connector][version] = "1.0-alpha7"
 projects[elasticsearch_connector][subdir] = "contrib"
 
 projects[entity][version] = "1.6"
